@@ -78,14 +78,13 @@
 
 
 
-
-        .title-container {
+        .message {
             position: absolute;
-            top: 8%;
+            top: 5%;
             left: 50%;
             transform: translateX(-50%);
             z-index: 1000;
-            display: flex;
+            /* display: flex; */
 
             /* 'flex-start' alinea los elementos a la parte superior del contenedor */
             align-items: flex-start; 
@@ -93,8 +92,8 @@
             justify-content: space-between;
             width: 90%;
             max-width: 1500px;
-            opacity: 0;
-            transition: opacity 1.2s ease-in-out 0.5s;
+            /* opacity: 0; */
+            transition: opacity 1.2s ease-in-out 0.5s; 
         }
 
         /* --- TÍTULO Y PÉTALOS --- */
@@ -615,7 +614,7 @@
         
         .grow-ans { animation: grow-ans 2s var(--d) backwards; }
         .growing-grass { animation: growing-grass-ans 1s 2s backwards; }
-        .container * { animation-play-state: paused !important; }
+        /* .container * { animation-play-state: paused !important; } */
 
 
         .imagen_ramo_fondo {
@@ -661,13 +660,13 @@
                 transform: scale(0.9); 
             }
 
-            .title-container {
+            /* .title-container {
                 flex-direction: column;
                 gap: 10px; /* Menos espacio entre título e imagen */
-                top: 3%;   /* Más cerca del borde superior */
-                justify-content: center; 
+                /* top: 3%;   /* Más cerca del borde superior */
+                /* justify-content: center; 
                 align-items: center; 
-            }
+            }  */
 
             .title-image {
                 /* 4. Hacemos la imagen más pequeña para ahorrar espacio vertical */
@@ -896,9 +895,9 @@
       /* --- NUEVA REGLA PARA AÑADIR --- */
 
       /* Hace visible el contenedor del título SÓLO si el body NO tiene la clase .container */
-      body:not(.container) .title-container {
+      /* body:not(.container) .title-container {
           opacity: 1;
-      }
+      } */
     </style>
 </head>
 
@@ -906,39 +905,44 @@
     
 
     <!-- Superposición para iniciar el audio (con imagen local) -->
-    <div id="audio-overlay">
+    <!-- <div id="audio-overlay">
       <div class="overlay-content">
-        <h2>Toca para abrir</h2>
+        <h2>Toca para abrir</h2> -->
         <!-- Se cambió el src a la imagen local que solicitaste -->
-        <img src="https://www.dropbox.com/scl/fi/cmqvcdkq1ddgvhzwk2pn6/image.png?rlkey=79mreuh53xqegx80hy6drn77p&raw=1" alt="Tocar para iniciar" class="overlay-image">
+        <!-- <img src="https://www.dropbox.com/scl/fi/cmqvcdkq1ddgvhzwk2pn6/image.png?rlkey=79mreuh53xqegx80hy6drn77p&raw=1" alt="Tocar para iniciar" class="overlay-image">
       </div>
-    </div>
+    </div> -->
     <!-- Contenedor para la animación de partículas de fondo -->
     <div class="background-particles"></div>
     
     <!-- Etiqueta de audio -->
     <audio id="background-music" src="images/sound.mp3" loop></audio>
     
-    <!-- Contenedor para el título y la imagen -->
-    <div class="title-container">
-        <h1 class="main-title">Flores para ti, mi amor</h1>
-        <img src="https://cdn.pixabay.com/photo/2018/05/28/22/30/love-3437355_1280.jpg" alt="Imagen de pareja" class="title-image">
-    </div>
+    
 
     <!-- Capa para opacidad del fondo -->
     <div class="night"></div>
 
-     <div class="ramo_fondo">
+     
+      <div class="ramo_fondo">
         <img src="wrapping4.png" alt="Girl in a jacket" class="imagen_ramo_fondo">
 
-     </div>
-     <div class="ramo_frente">
+      </div>
+      <div class="ramo_frente">
         <img src="wrapping4_front.png" alt="Girl in a jacket" class="imagen_ramo_frente">
        
       </div>
 
+<!-- Contenedor para el título y la imagen -->
+    <div class="message">
+        <h1 class="main-title">Tus Flores Amarillas Señorita</h1>
+        <img src="https://cdn.pixabay.com/photo/2018/05/28/22/30/love-3437355_1280.jpg" alt="Imagen de pareja" class="title-image">
+    </div>
+
     <!-- Contenedor principal de la animación de las flores -->
     <div class="flowers">
+
+
       <div class="flower flower--1">
         <div class="flower__leafs flower__leafs--1">
           <div class="flower__leaf flower__leaf--1"></div>
@@ -1156,6 +1160,7 @@
         </div>
       </div>
   
+      
       <div class="grow-ans" style="--d:2.4s">
         <div class="flower__g-right flower__g-right--1">
           <div class="leaf"></div>
