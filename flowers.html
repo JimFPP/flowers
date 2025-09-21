@@ -67,7 +67,7 @@
             min-height: 100vh;
             background-color: var(--color-fondo-oscuro);
             /* Imagen de fondo solicitada */
-            background-image: url('https://www.dropbox.com/scl/fi/2v9cvj88qhkbhcmdfd5w9/back.png?rlkey=jcjesxgfdyylfwqprt13kcz1d&raw=1'); */
+            /*background-image: url('https://www.dropbox.com/scl/fi/2v9cvj88qhkbhcmdfd5w9/back.png?rlkey=jcjesxgfdyylfwqprt13kcz1d&raw=1'); */
             background-size: cover; */
             background-position: center center;
             background-attachment: fixed;
@@ -897,6 +897,8 @@
       .fit {
         max-width: 100%;
         max-height: 100%;
+        z-index: -10;
+        position: relative;
       }
 
       /* --- NUEVA REGLA PARA AÑADIR --- */
@@ -930,6 +932,8 @@
     <!-- Capa para opacidad del fondo -->
     <div class="night"></div>
 
+    <div>
+      <img src="https://www.dropbox.com/scl/fi/2v9cvj88qhkbhcmdfd5w9/back.png?rlkey=jcjesxgfdyylfwqprt13kcz1d&raw=1" alt="" class="fit">
      
       <div class="ramo_fondo">
         <img src="wrapping4.png" alt="Girl in a jacket" class="imagen_ramo_fondo">
@@ -939,7 +943,7 @@
         <img src="wrapping4_front.png" alt="Girl in a jacket" class="imagen_ramo_frente">
        
       </div>
-
+</div>
 <!-- Contenedor para el título y la imagen -->
     <div class="message">
         <h1 class="main-title">Tus Flores Amarillas Señorita</h1>
