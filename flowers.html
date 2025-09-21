@@ -67,8 +67,8 @@
             min-height: 100vh;
             background-color: var(--color-fondo-oscuro);
             /* Imagen de fondo solicitada */
-            background-image: url('https://www.dropbox.com/scl/fi/2v9cvj88qhkbhcmdfd5w9/back.png?rlkey=jcjesxgfdyylfwqprt13kcz1d&raw=1');
-            background-size: cover;
+            background-image: url('https://www.dropbox.com/scl/fi/2v9cvj88qhkbhcmdfd5w9/back.png?rlkey=jcjesxgfdyylfwqprt13kcz1d&raw=1'); */
+            background-size: cover; */
             background-position: center center;
             background-attachment: fixed;
             overflow: hidden;
@@ -894,6 +894,11 @@
           animation-delay: 0s;
       }   
       
+      .fit {
+        max-width: 100%;
+        max-height: 100%;
+      }
+
       /* --- NUEVA REGLA PARA AÑADIR --- */
 
       /* Hace visible el contenedor del título SÓLO si el body NO tiene la clase .container */
@@ -903,7 +908,7 @@
     </style>
 </head>
 
-<body class="container">
+<body class="container fit">
     
 
     <!-- Superposición para iniciar el audio (con imagen local) -->
