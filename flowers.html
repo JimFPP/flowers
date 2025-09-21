@@ -68,7 +68,7 @@
             background-color: var(--color-fondo-oscuro);
             /* Imagen de fondo solicitada */
             /*background-image: url('https://www.dropbox.com/scl/fi/2v9cvj88qhkbhcmdfd5w9/back.png?rlkey=jcjesxgfdyylfwqprt13kcz1d&raw=1'); */
-            background-size: cover; */
+            /* background-size: cover;  */
             background-position: center center;
             background-attachment: fixed;
             overflow: hidden;
@@ -895,10 +895,12 @@
       }   
       
       .fit {
-        max-width: 100%;
-        max-height: 100%;
-        z-index: -10;
-        position: relative;
+        position:absolute;
+        left:0px;
+        z-index:-100;
+        display:inline-block;
+        width:100%;
+        height:100%;
       }
 
       /* --- NUEVA REGLA PARA AÑADIR --- */
@@ -910,7 +912,7 @@
     </style>
 </head>
 
-<body class="container fit">
+<body class="container">
     
 
     <!-- Superposición para iniciar el audio (con imagen local) -->
@@ -930,11 +932,11 @@
     
 
     <!-- Capa para opacidad del fondo -->
-    <div class="night"></div>
-
-    <div>
+    <div class="night">
       <img src="https://www.dropbox.com/scl/fi/2v9cvj88qhkbhcmdfd5w9/back.png?rlkey=jcjesxgfdyylfwqprt13kcz1d&raw=1" alt="" class="fit">
-     
+    </div>
+
+    
       <div class="ramo_fondo">
         <img src="wrapping4.png" alt="Girl in a jacket" class="imagen_ramo_fondo">
 
@@ -943,12 +945,16 @@
         <img src="wrapping4_front.png" alt="Girl in a jacket" class="imagen_ramo_frente">
        
       </div>
-</div>
+
 <!-- Contenedor para el título y la imagen -->
     <div class="message">
         <h1 class="main-title">Tus Flores Amarillas Señorita</h1>
         <img src="https://cdn.pixabay.com/photo/2018/05/28/22/30/love-3437355_1280.jpg" alt="Imagen de pareja" class="title-image">
     </div>
+
+     <!-- <div>
+      <img src="https://www.dropbox.com/scl/fi/2v9cvj88qhkbhcmdfd5w9/back.png?rlkey=jcjesxgfdyylfwqprt13kcz1d&raw=1" alt="" class="fit">
+     </div> -->
 
     <!-- Contenedor principal de la animación de las flores -->
     <div class="flowers">
