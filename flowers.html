@@ -153,6 +153,8 @@
             z-index: -1; /* Se asegura que esté detrás de las flores pero sobre la imagen del body */
         }
 
+
+         
         .flowers {
             position: relative;
             transform: scale(0.9);
@@ -319,12 +321,12 @@
             transform-origin: left;
             transform: rotate(70deg) rotateY(30deg) scale(0.6);
         }
-        .flower__line__leaf--6 {
+        /*.flower__line__leaf--6 {
             top: -2%;
             left: -450%;
             transform-origin: right;
-            transform: rotate(-70deg) rotateY(30deg) scale(0.6);
-        }
+            transform: rotate(70deg) rotateY(30deg) scale(0.6);
+        }*/
         .flower__light {
             position: absolute;
             bottom: 0vmin;
@@ -415,7 +417,7 @@
             --w: 2vmin;
             --h: 6vmin;
             --c: var(--color-tallo-hoja);
-            position: absolute;
+            position: absolreute;
             bottom: 10vmin;
             left: -3vmin;
             transform-origin: bottom center;
@@ -499,15 +501,15 @@
         .flower__g-front__leaf-wrapper--7 { animation-delay: 3.8s !important; }
         .flower__g-front__leaf-wrapper--8 { animation-delay: 3.5s !important; }
         
-        .flower__g-front__leaf {
-            width: 10vmin;
+        /*.flower__g-front__leaf {
+            width: 100vmin;
             height: 10vmin;
             border-radius: 100% 0% 0% 100%/100% 100% 0% 0%;
             box-shadow: inset 0 2px 1vmin hsla(184, 97%, 58%, 0.2); 
             background-image: linear-gradient(to bottom left, transparent, var(--color-fondo-oscuro)), linear-gradient(to bottom right, var(--color-pasto-brillante) 50%, transparent 50%, transparent);
             -webkit-mask-image: linear-gradient(to bottom right, var(--color-pasto-brillante) 50%, transparent 50%, transparent);
             mask-image: linear-gradient(to bottom right, var(--color-pasto-brillante) 50%, transparent 50%, transparent);
-        }
+        }*/
         .flower__g-fr {
             position: absolute;
             bottom: 4vmin;
@@ -580,6 +582,38 @@
         .grow-ans { animation: grow-ans 2s var(--d) backwards; }
         .growing-grass { animation: growing-grass-ans 1s 2s backwards; }
         .container * { animation-play-state: paused !important; }
+
+
+        .imagen_ramo_fondo {
+          position: relative;
+          z-index: -1;
+          left: 5px;
+          width: 40%;
+          
+        }
+      .imagen_ramo_frente {
+          position: absolute;
+          z-index: 0;
+          left: 5px;
+          width: 27%;
+          
+        }
+        .ramo_fondo {
+            position: fixed;
+            left: 50vmin;
+            top: 30vmin;
+            width: 100%;
+            height: 100%;
+            z-index: -1; /* Se asegura que esté detrás de las flores pero sobre la imagen del body */
+        }
+         .ramo_frente {
+            position: fixed;
+            left: 62vmin;
+            top: 58vmin;
+            width: 100%;
+            height: 100%;
+            z-index: 1; /* Se asegura que esté detrás de las flores pero sobre la imagen del body */
+        }
 
         /* --- SECCIÓN 2: Ajustes Responsivos --- */
 
@@ -857,6 +891,15 @@
 
     <!-- Capa para opacidad del fondo -->
     <div class="night"></div>
+
+     <div class="ramo_fondo">
+        <img src="wrapping4.png" alt="Girl in a jacket" class="imagen_ramo_fondo">
+
+     </div>
+     <div class="ramo_frente">
+        <img src="wrapping4_front.png" alt="Girl in a jacket" class="imagen_ramo_frente">
+       
+      </div>
 
     <!-- Contenedor principal de la animación de las flores -->
     <div class="flowers">
@@ -1178,7 +1221,11 @@
           <div class="leaf leaf--3"></div>
         </div>
       </div>
+                
+
     </div>
+
+
 
     <script>
         // --- JAVASCRIPT PARA AÑADIR ---
