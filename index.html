@@ -55,19 +55,24 @@
         }
 
         body {
-            display: flex;
+            /* display: flex;
             align-items: flex-end;
             justify-content: center;
             height: 100%;
             width: 100%;
-            background-color: var(--color-fondo-oscuro);
+            background-color: var(--color-fondo-oscuro); */
             /* Imagen de fondo solicitada */
             /*background-image: url('https://www.dropbox.com/scl/fi/2v9cvj88qhkbhcmdfd5w9/back.png?rlkey=jcjesxgfdyylfwqprt13kcz1d&raw=1'); */
             /* background-size: cover;  */
-            background-position: center center;
-            background-attachment: fixed;
-            overflow: hidden; */
-            /* perspective: 500px; */
+            /* background-position: center center; */
+            /* background-attachment: fixed; */
+            /* overflow: hidden; 
+            perspective: 500px; */
+              background: url(../vale/tangled.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
         }
 
 
@@ -156,7 +161,7 @@
 
         .flower {
             position: absolute;
-            bottom: -130vmin;
+            bottom: -10vmin;
             transform-origin: bottom center;
             z-index: 10;
             --fl-speed: 0.8s;
@@ -383,7 +388,7 @@
             --c: var(--color-pasto-brillante);
             --line-w: 1.5vmin;
             position: absolute;
-            bottom: -100vmin;
+            bottom: -10vmin;
             left: -7vmin;
             display: flex;
             flex-direction: column;
@@ -395,7 +400,7 @@
         .flower__grass--1 { animation: moving-grass 2s linear infinite; }
         .flower__grass--2 {
             left: 2vmin;
-            bottom: -100vmin;
+            bottom: -10vmin;
             transform: scale(0.5) rotate(75deg) rotateX(10deg) rotateY(-200deg);
             opacity: 0.8;
             z-index: 0;
@@ -542,7 +547,7 @@
         }*/
         .flower__g-fr {
             position: absolute;
-            bottom: -110vmin;
+            bottom: -10vmin;
             left: 10vmin;
             transform-origin: bottom left;
             z-index: 0;
@@ -556,11 +561,13 @@
             -webkit-mask-image: linear-gradient(to top, transparent 25%, var(--color-pasto-brillante) 50%);
             position: relative;
             z-index: 1;
+            bottom: 100vmin;
         }
         .flower__g-fr__leaf {
             position: absolute;
             top: 0;
             left: 0;
+            bottom: 100vmin;
             width: 10vmin;
             height: 10vmin;
             border-radius: 100% 0% 0% 100%/100% 100% 0% 0%;
