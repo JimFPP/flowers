@@ -96,7 +96,31 @@
                 0 0 15px var(--color-titulo-neon),
                 2px 2px 5px var(--color-sombra-titulo); /* Sombra oscura para contraste */
             text-align: center;
+            margin: 10;
+            top: -100;
+            position: relative;
+        }
+
+           .message-title {
+            color: var(--color-titulo);
+            font-family: 'Great Vibes', cursive;
+            font-size: clamp(2.5rem, 8vw, 5.5rem);
+            /* Múltiples sombras de texto para crear el brillo */
+            text-shadow: 
+                0 0 5px rgba(9, 0, 25, 0.8), /* Brillo blanco interior */
+                0 0 10px var(--color-titulo-neon), /* Brillo de color exterior */
+                0 0 15px var(--color-titulo-neon),
+                2px 2px 5px var(--color-sombra-titulo); /* Sombra oscura para contraste */
+            text-align: center;
             margin: 0;
+        }
+
+        .div-message{
+          display: inline-block;
+          margin-right: 10%;
+          margin-left: 10%;
+          bottom: 5vmin;
+          position: absolute;
         }
 
         /* Pétalos de flor */
@@ -943,13 +967,17 @@
       <div class="ramo_frente">
         <img src="wrapping4_front.png" alt="Girl in a jacket" class="imagen_ramo_frente">
        
+
+
       </div>
 
 <!-- Contenedor para el título y la imagen -->
     <div class="message">
         <h1 class="main-title">Tus Flores Amarillas Señorita</h1>
         <!-- <img src="https://cdn.pixabay.com/photo/2018/05/28/22/30/love-3437355_1280.jpg" alt="Imagen de pareja" class="title-image"> -->
-    </div>
+    
+    
+      </div>
 
      <!-- <div>
       <img src="https://www.dropbox.com/scl/fi/2v9cvj88qhkbhcmdfd5w9/back.png?rlkey=jcjesxgfdyylfwqprt13kcz1d&raw=1" alt="" class="fit">
@@ -1247,6 +1275,8 @@
           <div class="leaf leaf--3"></div>
         </div>
         
+        
+
       </div>
 <!--   
       <div class="long-g long-g--1">
@@ -1377,6 +1407,10 @@
                 
 
     </div>
+<div class="div-message">
+    <p class="message-title">Aunque no sea en persona, pero espero que estas flores alegren tu dia y te recuerden lo especial que eres</p>
+</div>
+
 </div>
 
 
