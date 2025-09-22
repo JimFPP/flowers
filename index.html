@@ -619,14 +619,14 @@
           
         }
       .imagen_ramo_frente {
-          position: absolute;
-          z-index: 0;
+          position: relative;
+          z-index: 10;
           left: 5px;
-          width: 27%;
+          width: 40%;
           
         }
         .ramo_fondo {
-            position: fixed;
+            position: absolute;
             left: 30%;
             top: 46%;
             width: 100%;
@@ -634,8 +634,8 @@
             z-index: -1; /* Se asegura que esté detrás de las flores pero sobre la imagen del body */
         }
          .ramo_frente {
-            position: fixed; 
-            left: 37%;
+            position: absolute; 
+            left: 30%;
             top: 46%;
             width: 100%;
             height: 100%;
